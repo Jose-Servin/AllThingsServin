@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>PyWebDev</title>
+  </head>
+
+  <body>
+    <header class="header container nav-open">
+      <a href="#">
+        <p id="navbar-logo-text">PyWebDev</p>
+      </a>
+      <nav class="nav-div">
+        <ul>
+          <li class="nav-element">
+            <i class="nav-icon ph-brackets-curly-light"></i>
+            <a href="#" class="main-nav-links"> Frontend</a>
+          </li>
+          <li class="nav-element">
+            <i class="nav-icon ph-code-light"></i>
+            <a href="#" class="main-nav-links"> Backend</a>
+          </li>
+          <li class="nav-element">
+            <i class="nav-icon ph-file-code-light"></i>
+            <a href="#" class="main-nav-links"> Docs</a>
+          </li>
+          <li class="nav-element">
+            <i class="nav-icon ph-codepen-logo-light"></i>
+            <a href="#" class="main-nav-links"> Projects</a>
+          </li>
+          <li class="nav-element">
+            <i class="nav-icon ph-users-three-light"></i>
+            <a href="#" class="main-nav-links"> Community</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button-mobile-nav">
+        <ion-icon name="menu" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+
+    <!-- This section is for non-repeating sections of our webpage.  -->
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="hero-title">Welcome Python WebDevs</h1>
+            <p class="hero-text">
+              Join our growing community and meet other Python Web Developers!
+              Whether you're searching for Docs, want to stay up to date on
+              interesting topics like Bootstrap, Flask and Frontend trends or
+              simply want to collaborate with others - join now!
+            </p>
+            <a role="button" class="button button-big" href="#"
+              >Join our Community</a
+            >
+            <div class="community">
+              <div class="community-members">
+                <img
+                  src="/static/images/community-members/team-member-1.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-2.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-3.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-4.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-5.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-6.jpg"
+                  alt="team member"
+                />
+                <img
+                  src="/static/images/community-members/team-member-7.jpg"
+                  alt="team member"
+                />
+              </div>
+              <div class="community-text">
+                <p><span> 100+ </span> active members and growing!</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-images">
+            <img
+              src="/static/images/code/dark-code.png"
+              alt="dark-theme-code"
+              class="dark-theme-python"
+            />
+            <!-- <img src="../images/light-code.png" alt="light-theme-code" id="light-theme-python"> -->
+            <!-- <img src="../images/html-code.png" alt="screenshot of html-code on screen" class="dark-theme-html"> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured-in">
+        <div class="container">
+          <h2 class="featured-in-heading">Featured In</h2>
+          <div class="featured-in-logos">
+            <img src="/static/images/featured-in-logos/datacamp.avif" alt="" />
+            <img
+              src="/static/images/featured-in-logos/odinproject.avif"
+              alt=""
+            />
+            <img src="/static/images/featured-in-logos/codepen.avif" alt="" />
+            <img src="/static/images/featured-in-logos/github.png" alt="" />
+            <img src="/static/images/featured-in-logos/udemy.avif" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-why-join">
+        <div class="container">
+          <span class="section-heading">Community</span>
+          <h2 class="section-sub-heading">
+            Become a PyWebDev Community Member
+          </h2>
+        </div>
+        <div class="container grid grid--2-columns grid--center-v">
+          <!-- STEP 1 -->
+          <div class="why-join-text-box">
+            <p class="step-number">01</p>
+            <h3 class="step-heading">Sign Up for Free!</h3>
+            <p class="step-description">
+              Become a member of the PyWebDev Community to gain access to
+              hundreds of free resources.
+            </p>
+          </div>
+          <!-- IMAGE 1 -->
+          <div class="why-join-image">
+            <img src="/static/images/elements/sign-up-form.png" alt="" />
+          </div>
+          <!-- IMAGE 2-->
+          <div class="why-join-image">
+            <div class="parent-circle-div">
+              <div id="circle">
+                <span id="collaborate">Collaborate</span>
+                <span id="contribute">Contribute</span>
+                <span id="mentor">Mentor</span>
+                <span id="learn">Learn</span>
+              </div>
+            </div>
+          </div>
+          <!-- STEP 2 -->
+          <div class="why-join-text-box">
+            <p class="step-number">02</p>
+            <h3 class="step-heading">
+              Learn by Doing. <br />
+              Learn with Others.
+            </h3>
+            <p class="step-description">
+              Become a member of the PyWebDev Community to gain access to
+              hundreds of free resources.
+            </p>
+          </div>
+          <!-- STEP 3 -->
+          <div class="why-join-text-box">
+            <p class="step-number">03</p>
+            <h3 class="step-heading">Build your Network!</h3>
+            <p class="step-description">
+              Become a member of the PyWebDev Community to gain access to
+              hundreds of free resources.
+            </p>
+          </div>
+          <!-- IMAGE 3: MEMBERS -->
+          <div class="why-join-members">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="member-card">
+                    <img
+                      src="/static/images/community-members/team-member-5.jpg"
+                      alt="team member"
+                      class="member-image"
+                    />
+                    <div>
+                      <h3 class="member-name">Elliott Turner</h3>
+                      <p class="member-role">Senior Software Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="member-card">
+                    <img
+                      src="/static/images/community-members/team-member-5.jpg"
+                      alt="team member"
+                      class="member-image"
+                    />
+                    <div>
+                      <h3 class="member-connect">Connect with {name}!</h3>
+                      <div class="member-icons-container">
+                        <ion-icon
+                          class="member-contact-icons"
+                          name="logo-twitter"
+                        ></ion-icon>
+                        <ion-icon
+                          class="member-contact-icons"
+                          name="logo-github"
+                        ></ion-icon>
+                        <ion-icon
+                          class="member-contact-icons"
+                          name="mail"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-2.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Camila Thompson</h3>
+                <p class="member-role">Senior Software Developer</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Ricardo Campbell</h3>
+                <p class="member-role">Data Analyst</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-6.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Anthony Gomez</h3>
+                <p class="member-role">Junior Software Developer</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-3.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Lily Barnes</h3>
+                <p class="member-role">DevOps Engineer</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-4.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Arielle Taylor</h3>
+                <p class="member-role">Data Scientist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-courses">
+        <div class="container">
+          <span class="section-heading section-heading-dark-background"
+            >Courses</span
+          >
+          <h2 class="section-sub-heading section-sub-heading-dark-background">
+            Start learning today!
+          </h2>
+        </div>
+        <div class="container grid grid--3-columns">
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/python-logo.png"
+                alt="an image of the python logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Introduction to Python</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">Python Programming</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/html-logo.png"
+                alt="an image of the html5 logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Introduction to HTML5</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">2 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Front-End</span>
+              <span class="tag">HTML5</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/css-logo.png"
+                alt="an image of the CSS logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Responsive Web Design with CSS</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Intermediate</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Front-End</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Responsive Web Design</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/javascript-logo.png"
+                alt="an image of the JavaScript logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">JavaScript for Beginners</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">5 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Development</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/postres-sql-logo.avif"
+                alt="an image of the PostgreSQL logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title"
+                >Database Essentials with PostgreSQL</span
+              >
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">SQL</span>
+              <span class="tag">Database</span>
+              <span class="tag">NoSQL</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Intermediate</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/static/images/courses/react-logo.avif"
+                alt="an image of the React logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title"
+                >Full-Stack Web Development with React</span
+              >
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">16 hours </span>
+              </div>
+              <span class="tag">Expert </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Full-Stack</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="testimonial-container">
+          <div class="all-testimonials">
+            <span class="section-heading">Success Stories</span>
+            <h2 class="section-sub-heading">
+              Don't just take our word for it.
+            </h2>
+            <div class="reviews">
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "As a manager, PyWebDev helps me show my team new packages and
+                  new ways to solve problems."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="/static/images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "We think of it as everyone's responsibility in the
+                  organization to be more data-driven. After all, every single
+                  one of us is probably touching data in some way, regardless of
+                  your role."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="/static/images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "DataCamp is a lot better than other online learning platforms
+                  I've tried. It takes less time, it is more efficient, and you
+                  get hands-on practice."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="/static/images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "On DataCamp, you learn from the experts. As you are taking
+                  courses, you are really learning from the best instructors in
+                  the world."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="/static/images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+            <figure class="gallery-image">
+              <img
+                src="/static/images/community-members/team-member-1.jpg"
+                alt="team member"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-memberships">
+        <div class="container">
+          <span class="section-heading section-heading-dark-background"
+            >Subscription Plans</span
+          >
+          <h2 class="section-sub-heading section-sub-heading-dark-background">
+            Pick the right plan for you.
+          </h2>
+        </div>
+        <div class="container grid grid--3-columns">
+          <div class="membership-card membership-card--starter">
+            <header class="membership-header">
+              <p class="membership-name">Community Member</p>
+              <p class="membership-price"><span>$</span>0</p>
+              <p class="membership-text">per month</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+            </ul>
+            <div class="membership-sign-up">
+              <a role="button" class="button button-big" href="#"
+                >Join our Community</a
+              >
+            </div>
+          </div>
+          <div class="membership-card membership-card--middle">
+            <header class="membership-header">
+              <p class="membership-name">Community Member Basic</p>
+              <p class="membership-price"><span>$</span>5</p>
+              <p class="membership-text">per month</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+            </ul>
+            <div class="membership-sign-up">
+              <a role="button" class="button button-big" href="#"
+                >Join our Community</a
+              >
+            </div>
+          </div>
+          <div class="membership-card membership-card--pro">
+            <header class="membership-header">
+              <p class="membership-name">Community Member <span>Pro</span></p>
+              <p class="membership-price"><span>$</span>8</p>
+              <p class="membership-text">per month</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Free monthly webinar access.</span>
+              </li>
+            </ul>
+            <div class="membership-sign-up">
+              <a role="button" class="button button-big" href="#"
+                >Join our Community</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- MEMBERSHIP FEATURES -->
+        <div class="container grid grid--4-columns">
+          <div class="membership-features">
+            <div class="feature-title">
+              <ion-icon name="people" class="feature-icon"></ion-icon>
+              <p class="feature-text">
+                <span> 100+ </span> active members and growing!
+              </p>
+            </div>
+          </div>
+          <div class="membership-features">
+            <div>
+              <ion-icon name="star" class="feature-icon"></ion-icon>
+              <ion-icon name="star" class="feature-icon"></ion-icon>
+              <ion-icon name="star" class="feature-icon"></ion-icon>
+              <ion-icon name="star" class="feature-icon"></ion-icon>
+              <ion-icon name="star-half" class="feature-icon"></ion-icon>
+            </div>
+            <p class="feature-text">Trusted by more than 500+ learners!</p>
+          </div>
+          <div class="membership-features">
+            <ion-icon name="logo-discord" class="feature-icon"></ion-icon>
+            <p class="feature-text">Access to the PyWebDev Discord Channel!</p>
+          </div>
+          <div class="membership-features">
+            <ion-icon name="ribbon" class="feature-icon"></ion-icon>
+            <p class="feature-text">Earn a Certificate upon completion</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION: Form  -->
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta--container">
+            <div class="cta-text-box">
+              <h2 class="step-heading">
+                Get the AllThingsWebDev MkDoc for free!
+              </h2>
+              <p class="step-description">
+                Sign up today and receive the official AllThingsWebDev MkDoc!
+              </p>
+
+              <form action="#" class="cta-form">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="" id="full-name" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="" id="email" required />
+                </div>
+                <div>
+                  <label for="select-where"
+                    >How did you hear about PyWebDev?</label
+                  >
+                  <select name="" id="select-where" required>
+                    <option value="GitHub">Please select an option:</option>
+                    <option value="GitHub">GitHub</option>
+                    <option value="DataCamp">DataCamp</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="CodePen">CodePen</option>
+                  </select>
+                </div>
+                <button class="button">Sign Up Now!</button>
+              </form>
+            </div>
+            <div
+              class="cta-image-box"
+              role="img"
+              aria-label="python code on an IDE."
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Outside of 'main' since we might want to repeat the footer in other pages. -->
+    <footer>
+      <div class="container grid grid--5-columns">
+        <div class="footer-col-1">
+          <div class="footer-col-1-top">
+            <a href="#">
+              <p id="navbar-logo-text">PyWebDev</p>
+            </a>
+
+            <p class="copyright">Copyright &copy; Jose Servin 2023</p>
+          </div>
+          <div class="footer-col-1-bottom">
+            <p class="footer-sub-heading">Contact Us</p>
+
+            <ul class="footer-social-links">
+              <li>
+                <ion-icon name="mail-outline" class="footer-social-icon">
+                </ion-icon>
+                <a href="mailTo:Community@PyWebDev.org">
+                  Community@PyWebDev.org</a
+                >
+              </li>
+              <li>
+                <ion-icon
+                  name="logo-twitter"
+                  class="footer-social-icon"
+                ></ion-icon>
+                <a>@PyWebDevCommunity</a>
+              </li>
+              <li>
+                <ion-icon
+                  name="location-outline"
+                  class="footer-social-icon"
+                ></ion-icon>
+                <a>P. Sherman, 42 Wallaby Way, Sydney</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <p class="footer-heading">PyWebDev</p>
+          <ul class="footer-options">
+            <li>Create Account</li>
+            <li>Log In</li>
+            <li>Pricing</li>
+            <li>Careers</li>
+            <li>Contact PyWebDev Team</li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <p class="footer-heading">Community</p>
+          <ul class="footer-options">
+            <li>About</li>
+            <li>FAQ's</li>
+            <li>Learn More</li>
+            <li>Become a Mentor</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-options">
+            <li>Blog</li>
+            <li>GitHub Repo</li>
+            <li>Road-Maps</li>
+          </ul>
+        </div>
+        <div class="footer-col-5">
+          <p class="footer-heading">Policy</p>
+          <ul class="footer-options">
+            <li>Privacy</li>
+            <li>Security</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
