@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <header class="header container nav-open">
+    <header class="header container">
       <a href="#">
         <p id="navbar-logo-text">PyWebDev</p>
       </a>
@@ -147,7 +147,7 @@
         </div>
         <div class="container grid grid--2-columns grid--center-v">
           <!-- STEP 1 -->
-          <div class="why-join-text-box">
+          <div class="why-join-text-box left-text-box">
             <p class="step-number">01</p>
             <h3 class="step-heading">Sign Up for Free!</h3>
             <p class="step-description">
@@ -161,14 +161,7 @@
           </div>
           <!-- IMAGE 2-->
           <div class="why-join-image">
-            <div class="parent-circle-div">
-              <div id="circle">
-                <span id="collaborate">Collaborate</span>
-                <span id="contribute">Contribute</span>
-                <span id="mentor">Mentor</span>
-                <span id="learn">Learn</span>
-              </div>
-            </div>
+            <img src="/static/images/elements/sign-up-form.png" alt="" />
           </div>
           <!-- STEP 2 -->
           <div class="why-join-text-box">
@@ -183,7 +176,7 @@
             </p>
           </div>
           <!-- STEP 3 -->
-          <div class="why-join-text-box">
+          <div class="why-join-text-box left-text-box">
             <p class="step-number">03</p>
             <h3 class="step-heading">Build your Network!</h3>
             <p class="step-description">
@@ -193,47 +186,15 @@
           </div>
           <!-- IMAGE 3: MEMBERS -->
           <div class="why-join-members">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="member-card">
-                    <img
-                      src="/static/images/community-members/team-member-5.jpg"
-                      alt="team member"
-                      class="member-image"
-                    />
-                    <div>
-                      <h3 class="member-name">Elliott Turner</h3>
-                      <p class="member-role">Senior Software Developer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flip-card-back">
-                  <div class="member-card">
-                    <img
-                      src="/static/images/community-members/team-member-5.jpg"
-                      alt="team member"
-                      class="member-image"
-                    />
-                    <div>
-                      <h3 class="member-connect">Connect with {name}!</h3>
-                      <div class="member-icons-container">
-                        <ion-icon
-                          class="member-contact-icons"
-                          name="logo-twitter"
-                        ></ion-icon>
-                        <ion-icon
-                          class="member-contact-icons"
-                          name="logo-github"
-                        ></ion-icon>
-                        <ion-icon
-                          class="member-contact-icons"
-                          name="mail"
-                        ></ion-icon>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="member-card">
+              <img
+                src="/static/images/community-members/team-member-2.jpg"
+                alt="team member"
+                class="member-image"
+              />
+              <div>
+                <h3 class="member-name">Camila Thompson</h3>
+                <p class="member-role">Senior Software Developer</p>
               </div>
             </div>
             <div class="member-card">
@@ -628,7 +589,7 @@
             Pick the right plan for you.
           </h2>
         </div>
-        <div class="container grid grid--3-columns">
+        <div class="container grid grid--2-columns">
           <div class="membership-card membership-card--starter">
             <header class="membership-header">
               <p class="membership-name">Community Member</p>
@@ -659,40 +620,11 @@
               >
             </div>
           </div>
-          <div class="membership-card membership-card--middle">
-            <header class="membership-header">
-              <p class="membership-name">Community Member Basic</p>
-              <p class="membership-price"><span>$</span>5</p>
-              <p class="membership-text">per month</p>
-            </header>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
-                <span>Monthly webinar access.</span>
-              </li>
-              <li class="list-item">
-                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
-                <span>Free monthly webinar access.</span>
-              </li>
-              <li class="list-item">
-                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
-                <span>Free monthly webinar access.</span>
-              </li>
-              <li class="list-item">
-                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
-                <span>Free monthly webinar access.</span>
-              </li>
-            </ul>
-            <div class="membership-sign-up">
-              <a role="button" class="button button-big" href="#"
-                >Join our Community</a
-              >
-            </div>
-          </div>
+
           <div class="membership-card membership-card--pro">
             <header class="membership-header">
               <p class="membership-name">Community Member <span>Pro</span></p>
-              <p class="membership-price"><span>$</span>8</p>
+              <p class="membership-price"><span>$</span>5</p>
               <p class="membership-text">per month</p>
             </header>
             <ul class="list">
@@ -723,12 +655,10 @@
         <!-- MEMBERSHIP FEATURES -->
         <div class="container grid grid--4-columns">
           <div class="membership-features">
-            <div class="feature-title">
-              <ion-icon name="people" class="feature-icon"></ion-icon>
-              <p class="feature-text">
-                <span> 100+ </span> active members and growing!
-              </p>
-            </div>
+            <ion-icon name="people" class="feature-icon"></ion-icon>
+            <p class="feature-text">
+              <span> 100+ </span> active members and growing!
+            </p>
           </div>
           <div class="membership-features">
             <div>

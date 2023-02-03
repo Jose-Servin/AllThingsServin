@@ -83,6 +83,7 @@ a {
 
 .grid--2-columns {
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
 }
 
 .grid--3-columns {
@@ -111,7 +112,7 @@ a {
 
 .section-sub-heading {
   font-size: 3.6rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 8rem;
 }
 
 .section-heading-dark-background {
@@ -211,7 +212,7 @@ a {
 .nav-div ul {
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 6.4rem;
 }
 
 .nav-element {
@@ -463,6 +464,11 @@ a {
   margin-top: 7px;
   display: flex;
   justify-content: space-around;
+}
+
+.member-name,
+.member-role {
+  text-align: center;
 }
 
 .member-contact-icons {
@@ -812,7 +818,7 @@ a {
 }
 
 .cta-text-box {
-  padding: 2.4rem 2.4rem 4.8rem 4.8rem;
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
   color: whitesmoke;
 }
 

@@ -78,7 +78,7 @@ Below 1600px
   }
 
   .nav-div ul {
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
 
   .reviews {
@@ -102,11 +102,21 @@ Below 1600px
   html {
     font-size: 50%;
   }
+
+  .parent-circle-div {
+    transition: all 0.25s ease-in;
+    transform: scale(0.85);
+  }
+
+  .why-join-image img {
+    /* height: 15rem; */
+    width: 50%;
+  }
 }
 
 /* 
-  Below 1030px 
-  */
+  Below 944px: tablets
+*/
 
 @media (max-width: 59em) {
   .hero {
@@ -123,6 +133,11 @@ Below 1600px
 
   .hero-images img {
     width: 75%;
+  }
+
+  .parent-circle-div {
+    transition: all 0.25s ease-in;
+    transform: scale(0.75);
   }
 
   .community {
@@ -188,7 +203,7 @@ Below 1600px
     /* hidden by default 
       display:none; doesn't allow for transitions so using another approach. 
       */
-    transition: all 0.5s ease-in;
+    transition: all 0.25s ease-in;
     /* 1. Hide visually  */
     opacity: 0;
     /* 2. Make element unaccessible to mouse and keyboard */
@@ -226,5 +241,113 @@ Below 1600px
   }
   .nav-icon {
     font-size: 3rem;
+  }
+
+  .why-join-members {
+    grid-template-columns: 1fr;
+  }
+
+  .member-name {
+    font-size: 1.6rem;
+  }
+
+  .member-role {
+    font-size: 1.4rem;
+  }
+
+  .member-image {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+/* 
+  Below 700px : smaller tablets
+*/
+@media (max-width: 43.75em) {
+  .grid--3-columns,
+  .grid--4-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-text-box .step-heading {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    /* padding: 0 8rem; */
+  }
+
+  .cta-text-box .step-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    /* padding: 0 8rem; */
+  }
+
+  /* .membership-card--pro {
+    grid-column: 1 / -1;
+    justify-self: center;
+  } */
+  .section-sub-heading {
+    margin-bottom: 4.8rem;
+  }
+
+  .parent-circle-div {
+    transition: all 0.25s ease-in;
+    transform: scale(0.65);
+  }
+
+  .feature-icon {
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .grid--5-columns {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2.4rem;
+    column-gap: 2.4rem;
+  }
+
+  footer {
+    padding: 4.8rem 0;
+  }
+
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    grid-row: 1;
+  }
+
+  .footer-col-1 {
+    grid-column: span 4;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-col-1-top {
+    align-self: flex-end;
+  }
+  #navbar-logo-text {
+    font-size: 3.2rem;
+  }
+}
+
+/* 
+  Below 550px : phones
+*/
+@media (max-width: 34.375em) {
+  .grid--2-columns,
+  .grid--3-columns,
+  .grid--4-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .list {
+    align-items: center;
+  }
+
+  .membership-features {
+    text-align: center;
   }
 }
