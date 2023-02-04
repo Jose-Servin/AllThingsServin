@@ -21,6 +21,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script defer src="/static/JavaScript/script.js"></script>
     <title>PyWebDev</title>
   </head>
 
@@ -32,12 +34,8 @@
       <nav class="nav-div">
         <ul>
           <li class="nav-element">
-            <i class="nav-icon ph-brackets-curly-light"></i>
-            <a href="#" class="main-nav-links"> Frontend</a>
-          </li>
-          <li class="nav-element">
             <i class="nav-icon ph-code-light"></i>
-            <a href="#" class="main-nav-links"> Backend</a>
+            <a href="#courses" class="main-nav-links"> Courses</a>
           </li>
           <li class="nav-element">
             <i class="nav-icon ph-file-code-light"></i>
@@ -67,9 +65,9 @@
             <h1 class="hero-title">Welcome Python WebDevs</h1>
             <p class="hero-text">
               Join our growing community and meet other Python Web Developers!
-              Whether you're searching for Docs, want to stay up to date on
-              interesting topics like Bootstrap, Flask and Frontend trends or
-              simply want to collaborate with others - join now!
+              Whether you're searching for Docs, want to stay up to date with
+              the latest Web Development trends, or simply want to collaborate
+              with others - join now!
             </p>
             <a role="button" class="button button-big" href="#"
               >Join our Community</a
@@ -156,11 +154,11 @@
             </p>
           </div>
           <!-- IMAGE 1 -->
-          <div class="why-join-image">
+          <div class="why-join-image why-join-image-1">
             <img src="/static/images/elements/sign-up-form.png" alt="" />
           </div>
           <!-- IMAGE 2-->
-          <div class="why-join-image">
+          <div class="why-join-image why-join-image-2">
             <img src="/static/images/elements/sign-up-form.png" alt="" />
           </div>
           <!-- STEP 2 -->
@@ -256,7 +254,7 @@
         </div>
       </section>
 
-      <section class="section-courses">
+      <section class="section-courses" id="courses">
         <div class="container">
           <span class="section-heading section-heading-dark-background"
             >Courses</span
@@ -735,7 +733,9 @@
               <p id="navbar-logo-text">PyWebDev</p>
             </a>
 
-            <p class="copyright">Copyright &copy; Jose Servin 2023</p>
+            <p class="copyright">
+              Copyright &copy; Jose Servin <span id="year">2029</span>
+            </p>
           </div>
           <div class="footer-col-1-bottom">
             <p class="footer-sub-heading">Contact Us</p>

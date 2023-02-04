@@ -38,6 +38,7 @@ LIGHT YELLOW: #ffd60a
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -170,6 +171,7 @@ a {
   cursor: pointer;
   /* By default, the button should not be visible; only until screen size reached a certain point. */
   display: none;
+  z-index: 9999;
 }
 
 .icon-mobile-nav {
@@ -450,7 +452,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 0.8rem;
 }
 
 .member-image {
@@ -689,10 +691,11 @@ a {
 .membership-card {
   background-color: #213048;
   background-color: rgb(41, 62, 78);
-
   color: #ffffff;
   padding: 3.2rem 3.2rem 3.2rem 3.2rem;
   border-radius: 8px;
+  width: 85%;
+  justify-self: center;
 }
 
 .membership-card--middle {
@@ -736,6 +739,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding-left: 3rem;
 }
 
 .list-item {
@@ -775,12 +779,12 @@ a {
   text-transform: uppercase;
   /* font-weight: 600; */
   letter-spacing: 2.5px;
-  top: 0%;
-  right: -13%;
+  top: -4%;
+  right: 0%;
   background-color: #ffd43b;
   padding: 0.5rem;
   color: #0e1f2e;
-  transform: rotate(35deg);
+  /* transform: rotate(35deg); */
 }
 /* ******************************************* */
 /* FEATURES */
@@ -813,7 +817,7 @@ a {
   color: whitesmoke;
   box-shadow: 0 2rem 2rem 0 rgb(0 0 0 / 30%);
   border-radius: 8px;
-  height: 50rem;
+  /* height: 50rem; */
   overflow: hidden;
 }
 
