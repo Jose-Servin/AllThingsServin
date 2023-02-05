@@ -346,7 +346,10 @@ a {
 }
 
 .featured-in-logos img {
-  height: 4.2rem;
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  height: 3.6rem;
   border-radius: 8px;
   filter: brightness(0) invert(1);
   opacity: 65%;
