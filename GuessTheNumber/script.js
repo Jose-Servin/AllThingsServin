@@ -22,10 +22,15 @@ function getRandomIntInclusive(min = 1, max = 20)
 
 const correctNumber = getRandomIntInclusive()
 
-function clearGuess()
+
+function updateScore(s)
 {
-    document.querySelector(".guess").value = "";
+    // using textContent and not value since it's not an input field
+    document.querySelector(".score").textContent = s
 }
+
+// Defining score value to have better control over data 
+let score = 20;
 
 const checkBtn = document.querySelector(".check")
 checkBtn.addEventListener('click', function ()
@@ -50,14 +55,42 @@ checkBtn.addEventListener('click', function ()
     }
     // user is too high
     else if (numberGuess > correctNumber) {
-        document.querySelector(".message").textContent = "😅 Too high! Try again.";
-        clearGuess();
+        // check user hasn't lost
+        if (score > 1) {
+
+            document.querySelector(".message").textContent = "😅 Too high! Try again.";
+            score--;
+            updateScore(score);
+
+        } else {
+            document.querySelector(".message").textContent = "🥴 Oh no!! You lost...";
+            updateScore(0);
+        }
 
     }
     // user is too low
     else {
-        document.querySelector(".message").textContent = "😅 Too low! Try again.";
-        clearGuess();
+        // check user hasn't lost
+        if (score > 1) {
+            document.querySelector(".message").textContent = "😅 Too low! Try again.";
+            score--;
+            updateScore(score);
+
+        } else {
+            document.querySelector(".message").textContent = "🥴 Oh no!! You lost...";
+            updateScore(0);
+        }
+
     }
 })
 
+
+
+const againBtn = document.querySelector(".again");
+againBtn.addEventListener('click', function ()
+{
+    // first we update the high score with score 
+    highScore = document.querySelector('.high-score').textContent = score;
+
+
+})
