@@ -1,0 +1,254 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLORS
+Light: #E5E5F7
+Dark: #011126
+Dark Blue: #042F40
+Light Blue: #3c6373 
+
+
+
+*/
+
+/* ******************************************* */
+/* GLOBAL RESETS */
+/* ******************************************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  color: #314163;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  margin-bottom: 24rem !important;
+}
+
+/* ******************************************* */
+/* Page Layouts */
+/* ******************************************* */
+.container {
+  max-width: 135rem;
+  margin: 0 auto;
+  /* ADDED TO THE CONTENT SO PADDING EXISTS IN SMALLER VIEW PORTS */
+  padding: 0 3.2rem;
+}
+
+.mini-container {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  /* opacity: 0.6;
+  background-image: radial-gradient(#042f40 0.75px, #ffffff 0.75px);
+  background-size: 15px 15px; */
+}
+
+.section-heading {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 3.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 3rem;
+}
+
+hr {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  border: 0;
+}
+
+hr.style01::before {
+  width: 6rem;
+  border-top: solid 4px #307fc8;
+  height: 5px;
+  margin-top: -2.5px;
+}
+
+hr::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* ******************************************* */
+/* Header */
+/* ******************************************* */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 6rem 3rem 3rem 3rem;
+  font-size: 2.4rem;
+  margin-bottom: 12.4rem;
+}
+
+.header .nav-div {
+  justify-self: end;
+}
+
+.btn-small {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: transparent;
+  justify-self: end;
+  color: #307fc8;
+  border: solid 1px #307ec837;
+  padding: 2rem 3.8rem;
+  border-radius: 3rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+
+.btn-small:hover {
+  border: solid 1px #307fc8;
+}
+
+.btn-fill:hover {
+  background-color: #e8f1f9;
+}
+
+/* ******************************************* */
+/* Hero */
+/* ******************************************* */
+.section-hero {
+  font-size: 2rem;
+}
+
+.div-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-username {
+  font-weight: 400;
+  color: #307fc8;
+  font-size: 2.4rem;
+}
+
+.hero-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  letter-spacing: 4px;
+}
+
+.hero-sub-heading {
+  font-size: 1.8rem;
+  color: #5a6782;
+  margin-bottom: 3rem;
+}
+
+/* ******************************************* */
+/* About Me */
+/* ******************************************* */
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 6.4rem;
+}
+
+.about-me-text {
+  padding-right: 4.8rem;
+  margin-top: 6.4rem;
+  font-size: 2.4rem;
+  height: 50rem;
+  width: 100%;
+  /* border: 5px solid #e9e9e9; */
+  font-weight: 200;
+  color: #7284a6;
+}
+
+.about-me-img {
+  height: 40rem;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+/* ******************************************* */
+/* Journey Timeline */
+/* ******************************************* */
+.journey {
+  height: 150rem;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+/* ******************************************* */
+/* Projects */
+/* ******************************************* */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 4.8rem;
+}
+
+.project {
+  height: 40rem;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+/* ******************************************* */
+/* Books */
+/* ******************************************* */
+.book-recs {
+  height: 40rem;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+/* ******************************************* */
+/* Contact */
+/* ******************************************* */
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3rem;
+}
+
+.contact-box {
+  height: 25rem;
+  width: 100%;
+  background-color: #e9e9e9;
+}
