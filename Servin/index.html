@@ -14,13 +14,13 @@
     />
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="static/css/styles.css" />
     <title>AllThingsServin</title>
   </head>
   <body>
     <header class="header container">
       <a href="#">
-        <p>JS Logo</p>
+        <button class="btn-small">Contact</button>
       </a>
 
       <button class="btn-small">Contact</button>
@@ -37,7 +37,7 @@
             </p>
             <button class="btn-small btn-fill">
               <p>What I've Built</p>
-              <ion-icon name="code-slash-outline"></ion-icon>
+              <ion-icon name="code-slash-outline" class="code-slash"></ion-icon>
             </button>
           </div>
         </div>
@@ -67,15 +67,97 @@
         <hr class="style01" />
         <h2 class="section-heading">Currently Building</h2>
         <div class="projects">
-          <div class="project">Jira Tickets</div>
-          <div class="project">2</div>
+          <div class="project">
+            <img
+              src="static/images/front-end.png"
+              alt="front end icon"
+              class="project-icon"
+            />
+            <div class="project-text-div">
+              <p class="project-description">
+                Design and create Blog page for AllThingsServin.
+              </p>
+              <div class="project-tag-div">
+                <div>
+                  <span class="project-tag">Frontend</span>
+                </div>
+                <div class="project-tag-auth">
+                  <ion-icon
+                    name="git-branch-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <ion-icon
+                    name="filter-circle-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <p class="tag-auth-name">Jose Servin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="static/images/backend.png"
+              alt="front end icon"
+              class="project-icon"
+            />
+            <div class="project-text-div">
+              <p class="project-description">
+                Build Backend for AllThingsServin using React.
+              </p>
+              <div class="project-tag-div">
+                <div>
+                  <span class="project-tag">Backend</span>
+                </div>
+                <div class="project-tag-auth">
+                  <ion-icon
+                    name="git-branch-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <ion-icon
+                    name="filter-circle-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <p class="tag-auth-name">Jose Servin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="static/images/database.png"
+              alt="front end icon"
+              class="project-icon"
+            />
+            <div class="project-text-div">
+              <p class="project-description">
+                Connect PostgreSQL to PyWebDev for user authentication.
+              </p>
+              <div class="project-tag-div">
+                <div>
+                  <span class="project-tag">Refactoring</span>
+                </div>
+                <div class="project-tag-auth">
+                  <ion-icon
+                    name="git-branch-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <ion-icon
+                    name="filter-circle-outline"
+                    class="tag-icon"
+                  ></ion-icon>
+                  <p class="tag-auth-name">Jose Servin</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section-books container">
         <hr class="style01" />
         <h2 class="section-heading">Books I Recommend</h2>
-        <div class="book-recs"></div>
+        <div class="book-carousel"></div>
       </section>
 
       <section class="section-contact container">
