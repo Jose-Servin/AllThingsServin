@@ -12,8 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Sora:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="static/css/styles.css" />
     <title>AllThingsServin</title>
   </head>
@@ -131,7 +137,7 @@
             />
             <div class="project-text-div">
               <p class="project-description">
-                Connect PostgreSQL to PyWebDev for user authentication.
+                Connect DB to AllThingsServin for user authentication.
               </p>
               <div class="project-tag-div">
                 <div>
@@ -156,10 +162,65 @@
 
       <section class="section-books container">
         <hr class="style01" />
-        <h2 class="section-heading">Books I Recommend</h2>
-        <div class="book-carousel">
-          <img src="" alt="" />
-          <div class="carousel-textbox"></div>
+        <h2 class="section-heading">Book Recommendations</h2>
+        <div class="books-carousel">
+          <img
+            src="static/images/Python-Crash-Course.jpeg"
+            alt="image of python crash course book cover"
+            class="book-image"
+          />
+          <blockquote class="testimonial">
+            <h2 class="book-title">Python Crash Course</h2>
+            <p class="testimonial-text">
+              "This is the book that started it all for me. An excellent
+              introduction to Python with lots of examples and challenges. If
+              you want to start learning Python, read this! "
+            </p>
+            <p class="book-author">Author: Eric Matthes</p>
+            <p class="book-review">
+              Review: "Python Crash Course is the world’s best-selling guide to
+              the Python programming language"
+            </p>
+          </blockquote>
+          <button class="btn btn-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <div class="dots">
+            <button class="dot dot-filled">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+          </div>
         </div>
       </section>
 
