@@ -53,6 +53,10 @@ section {
   margin-bottom: 24rem !important;
 }
 
+input {
+  border: none;
+}
+
 /* ******************************************* */
 /* Page Layouts */
 /* ******************************************* */
@@ -283,27 +287,85 @@ hr::before {
 }
 
 /* ******************************************* */
-/* Books */
+/* Books Slider */
 /* ******************************************* */
 
-.books-carousel {
-  height: 40rem;
-  width: 100%;
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
   background-color: #f1f3f5;
   border-radius: 8px;
-  padding: 32px 48px 32px 86px;
+}
+
+.slides-container {
+  height: 40rem;
+  width: 100%;
   display: flex;
+  overflow: scroll;
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: #307fc8;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* ******************************************* */
+/* Book Component */
+/* ******************************************* */
+
+.book-slide {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  gap: 3.2rem;
+  justify-items: center;
   align-items: center;
-  gap: 12rem;
-  position: relative;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding-right: 6.4rem;
 }
 
 .book-image {
-  max-width: 100%;
-  max-height: 100%;
-  height: 22rem;
+  width: 25rem; /* set the width to 400 pixels */
+  height: auto; /* let the height adjust proportionally */
   border-radius: 8px;
-  transform: scale(1.5);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
@@ -313,7 +375,7 @@ hr::before {
   margin-bottom: 0.8rem;
 }
 
-.testimonial-text {
+.book-text {
   line-height: 1.5;
   margin-bottom: 24px;
   font-size: 1.8rem;
@@ -324,6 +386,7 @@ hr::before {
 .book-author {
   font-size: 1.6rem;
   margin-bottom: 4px;
+  font-weight: 400;
 }
 
 .book-review {
@@ -389,14 +452,30 @@ hr::before {
 /* ******************************************* */
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 3rem;
+  height: 45rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f3f9ff;
 }
 
-.contact-box {
-  height: 25rem;
+.contact-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   width: 100%;
-  background-color: #e9e9e9;
+  height: 100%;
+  padding: 3.2rem 4.8rem;
+  align-items: center;
+}
+
+.contact-text p {
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.contact-icons ion-icon {
+  font-size: 3.8rem;
+  margin-right: 3rem;
 }
