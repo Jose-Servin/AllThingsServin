@@ -456,7 +456,6 @@ hr::before {
 /* ******************************************* */
 
 .contact-container {
-  height: 48rem;
   width: 100%;
   border-radius: 10px;
   background-color: #f3f9ff;
@@ -464,7 +463,7 @@ hr::before {
 
 .contact-div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   padding: 3.2rem 4.8rem;
   align-items: center;
@@ -474,8 +473,9 @@ hr::before {
   font-family: "Sora", sans-serif;
   font-weight: 300;
   font-size: 2.8rem;
-  margin-bottom: 4.8rem;
-  padding-right: 8rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
 }
 
 .contact-icons ion-icon {
@@ -484,17 +484,20 @@ hr::before {
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-  height: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin-top: 2.4rem;
+  column-gap: 6.4rem;
+  row-gap: 3.2rem;
+}
+
+textarea {
+  grid-column: 1/-1;
+  height: 18rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 90%;
   padding: 1.2rem;
   font-size: 1.6em;
   font-family: inherit;
@@ -503,7 +506,17 @@ hr::before {
   background-color: #d6e9fc;
 }
 
-textarea {
-  box-sizing: border-box;
-  flex-grow: 1;
+#contact-btn {
+  justify-self: center;
+  grid-column: 1/-1;
+}
+
+.contact-form-select {
+  color: #314163;
+  padding: 1.2rem;
+  font-size: 1.6em;
+  font-family: inherit;
+  border-radius: 4.8px;
+  border: solid 1px rgba(114, 132, 167, 0.149);
+  background-color: #d6e9fc;
 }
